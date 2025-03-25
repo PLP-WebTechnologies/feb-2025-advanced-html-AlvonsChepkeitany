@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A multimedia-rich webpage with HTML5 elements including images, tables, lists, and forms.">
+    <title>Multimedia & Forms in HTML5</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        header, main, footer { padding: 20px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+        th, td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+        th { background: #007bff; color: white; }
+        fieldset { margin: 10px 0; padding: 15px; border: 1px solid #ddd; }
+        legend { font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to Our Multimedia & Forms Page</h1>
+        <p>Explore the advanced features of HTML5.</p>
+    </header>
+
+    <!-- Ordered List -->
+    <section>
+        <h2>Topics Covered</h2>
+        <ol type="I">
+            <li>Embedding Multimedia</li>
+            <li>Creating Lists</li>
+            <li>Designing Tables</li>
+            <li>Building Forms</li>
+            <li>Ensuring Accessibility</li>
+        </ol>
+    </section>
+
+    <!-- External Image -->
+    <section>
+        <h2>Sample Image</h2>
+        <img src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg" alt="Sample from Pexels" width="600">
+    </section>
+
+    <!-- Contact Table -->
+    <section>
+        <h2>Contact List</h2>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Mobile</th>
+                <th>Email</th>
+            </tr>
+            <tr>
+                <td>John Doe</td>
+                <td>123 Main St, Nairobi</td>
+                <td>+254 712345678</td>
+                <td>john@example.com</td>
+            </tr>
+            <tr>
+                <td>Jane Smith</td>
+                <td>456 West St, Mombasa</td>
+                <td>+254 723456789</td>
+                <td>jane@example.com</td>
+            </tr>
+            <tr>
+                <td>Mark Brown</td>
+                <td>789 East St, Kisumu</td>
+                <td>+254 734567890</td>
+                <td>mark@example.com</td>
+            </tr>
+            <tr>
+                <td>Emily White</td>
+                <td>101 North St, Eldoret</td>
+                <td>+254 745678901</td>
+                <td>emily@example.com</td>
+            </tr>
+            <tr>
+                <td>David Black</td>
+                <td>202 South St, Nakuru</td>
+                <td>+254 756789012</td>
+                <td>david@example.com</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Registration Form -->
+    <section>
+        <h2>Registration Form</h2>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Personal Details</legend>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter password" required minlength="6"><br><br>
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferences</legend>
+                <label>Gender:</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label><br><br>
+
+                <label for="country">Country:</label>
+                <select id="country" name="country">
+                    <option value="kenya">Kenya</option>
+                    <option value="uganda">Uganda</option>
+                    <option value="tanzania">Tanzania</option>
+                </select><br><br>
+
+                <label>Interests:</label><br>
+                <input type="checkbox" id="coding" name="interests" value="coding">
+                <label for="coding">Coding</label>
+                <input type="checkbox" id="gaming" name="interests" value="gaming">
+                <label for="gaming">Gaming</label>
+                <input type="checkbox" id="reading" name="interests" value="reading">
+                <label for="reading">Reading</label>
+            </fieldset>
+
+            <button type="submit">Register</button>
+        </form>
+    </section>
+
+    <!-- Embedded Audio and Video -->
+    <section>
+        <h2>Multimedia</h2>
+
+        <!-- Audio Element -->
+        <h3>Sample Audio</h3>
+        <audio controls>
+            <source src="sample-audio.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+
+        <!-- Video Element -->
+        <h3>Sample Video</h3>
+        <video width="600" controls>
+            <source src="sample-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Contact us at <a href="mailto:info@example.com">info@example.com</a></p>
+        <p>© 2025 HTML5 Tutorial</p>
+    </footer>
+
+</body>
+</html>
